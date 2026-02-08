@@ -133,9 +133,9 @@ function scrollToSection(id) {
 function yesClicked() {
   spawnConfetti(40);
   tryPlay().catch(() => {});
-  setTimeout(() => {
-    window.location.href = 'celebration.html';
-  }, 800);
+  const celebr = document.getElementById('celebration');
+  if (celebr) celebr.classList.add('show');
+  window.open('celebration.html', '_blank', 'noopener');
 }
 
 function spawnConfetti(amount = 40) {
