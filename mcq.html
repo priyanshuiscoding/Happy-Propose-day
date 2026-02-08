@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Us Quiz 💕 – For Soumya</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="subpage">
+
+<div class="subpage-header">
+  <a href="index.html" class="back-btn">← Back</a>
+  <h1>📝 Fun Quiz: Who Are We? 💕</h1>
+  <p class="subpage-desc">Let's see how well you know us! Pick your answer, Soumya 😊</p>
+</div>
+
+<section class="mcq-section">
+  <form id="mcqForm" class="mcq-form">
+    <div class="mcq-question">
+      <label>1. Who is more loving? 💗</label>
+      <div class="mcq-options">
+        <label class="mcq-opt"><input type="radio" name="q1" value="me"> Me</label>
+        <label class="mcq-opt"><input type="radio" name="q1" value="soumya"> Soumya</label>
+        <label class="mcq-opt"><input type="radio" name="q1" value="both"> Both equally 💕</label>
+      </div>
+    </div>
+
+    <div class="mcq-question">
+      <label>2. Who sleeps more? 😴</label>
+      <div class="mcq-options">
+        <label class="mcq-opt"><input type="radio" name="q2" value="me"> Me</label>
+        <label class="mcq-opt"><input type="radio" name="q2" value="soumya"> Soumya</label>
+        <label class="mcq-opt"><input type="radio" name="q2" value="both"> Both 💤</label>
+      </div>
+    </div>
+
+    <div class="mcq-question">
+      <label>3. Who is more annoying? 😜</label>
+      <div class="mcq-options">
+        <label class="mcq-opt"><input type="radio" name="q3" value="me"> Me</label>
+        <label class="mcq-opt"><input type="radio" name="q3" value="soumya"> Soumya</label>
+        <label class="mcq-opt"><input type="radio" name="q3" value="both"> Both (adorably annoying) 😂</label>
+      </div>
+    </div>
+
+    <div class="mcq-question">
+      <label>4. Who easily gets irritated? 😤</label>
+      <div class="mcq-options">
+        <label class="mcq-opt"><input type="radio" name="q4" value="me"> Me</label>
+        <label class="mcq-opt"><input type="radio" name="q4" value="soumya"> Soumya</label>
+        <label class="mcq-opt"><input type="radio" name="q4" value="both"> Both (but we make up fast) 💕</label>
+      </div>
+    </div>
+
+    <div class="mcq-question">
+      <label>5. Who loves the other more? 💖</label>
+      <div class="mcq-options">
+        <label class="mcq-opt"><input type="radio" name="q5" value="me"> Me (I do!)</label>
+        <label class="mcq-opt"><input type="radio" name="q5" value="soumya"> Soumya</label>
+        <label class="mcq-opt"><input type="radio" name="q5" value="both"> We love each other equally! 💗</label>
+      </div>
+    </div>
+
+    <div class="mcq-question">
+      <label>6. Who says "I love you" more often? 💬</label>
+      <div class="mcq-options">
+        <label class="mcq-opt"><input type="radio" name="q6" value="me"> Me</label>
+        <label class="mcq-opt"><input type="radio" name="q6" value="soumya"> Soumya</label>
+        <label class="mcq-opt"><input type="radio" name="q6" value="both"> Both! Never enough though 😊</label>
+      </div>
+    </div>
+
+    <div class="mcq-question">
+      <label>7. Who is more stubborn? 🐢</label>
+      <div class="mcq-options">
+        <label class="mcq-opt"><input type="radio" name="q7" value="me"> Me</label>
+        <label class="mcq-opt"><input type="radio" name="q7" value="soumya"> Soumya</label>
+        <label class="mcq-opt"><input type="radio" name="q7" value="both"> Both (that's why we're perfect) 💕</label>
+      </div>
+    </div>
+
+    <button type="submit" class="cta mcq-submit">See Result! 🎉</button>
+  </form>
+
+  <div id="mcqResult" class="mcq-result hidden">
+    <h2>💕 All answers are correct — because we're US! 💕</h2>
+    <p>No matter who's more what… we're perfect for each other. That's all that matters. 😊💗</p>
+    <a href="index.html" class="cta">Back to Our Story ←</a>
+  </div>
+</section>
+
+<script>
+  document.getElementById('mcqForm').onsubmit = (e) => {
+    e.preventDefault();
+    document.getElementById('mcqForm').classList.add('hidden');
+    document.getElementById('mcqResult').classList.remove('hidden');
+    document.getElementById('mcqResult').scrollIntoView({ behavior: 'smooth' });
+  };
+</script>
+</body>
+</html>

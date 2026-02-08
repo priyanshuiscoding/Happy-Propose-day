@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>You Said Yes! 💕 – Soumya</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="celebration-page">
+
+<div class="celeb-hearts" id="celebHearts"></div>
+<div class="celeb-confetti" id="celebConfetti"></div>
+<div class="celeb-crackers" id="celebCrackers"></div>
+
+<section class="celeb-main">
+  <div class="celeb-content">
+    <h1 class="celeb-title">YOU SAID YES! 💕</h1>
+    <p class="celeb-subtitle">My heart is bursting with joy right now! 🥺💗</p>
+    
+    <div class="celeb-message">
+      <p>Soumya, you just made me the <strong>happiest person alive</strong>.</p>
+      <p>You're officially my better half — today, tomorrow, and forever. 💍</p>
+      <p>I promise to love you with everything I have. Thank you for choosing us. 💖</p>
+    </div>
+
+    <div class="celeb-gifs">
+      <div class="celeb-gif-wrap">
+        <img src="https://media.giphy.com/media/26BRv0ThflsHCqDrG/giphy.gif" alt="Hearts">
+      </div>
+      <div class="celeb-gif-wrap">
+        <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" alt="Love">
+      </div>
+      <div class="celeb-gif-wrap">
+        <img src="https://media.giphy.com/media/3o7TKsQ8MJHyTASOry/giphy.gif" alt="Celebrate">
+      </div>
+      <div class="celeb-gif-wrap">
+        <img src="https://media.giphy.com/media/26u4cqiYI30juCOGY/giphy.gif" alt="Kiss">
+      </div>
+    </div>
+
+    <p class="celeb-end">Forever yours. 💕</p>
+  </div>
+</section>
+
+<script>
+  // Flying hearts
+  const hearts = ['💕', '💗', '💖', '💝', '❤️', '💓', '🌸'];
+  const container = document.getElementById('celebHearts');
+  for (let i = 0; i < 25; i++) {
+    const el = document.createElement('span');
+    el.className = 'celeb-heart';
+    el.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+    el.style.left = Math.random() * 100 + '%';
+    el.style.animationDuration = (4 + Math.random() * 6) + 's';
+    el.style.animationDelay = Math.random() * 3 + 's';
+    el.style.fontSize = (20 + Math.random() * 24) + 'px';
+    container.appendChild(el);
+  }
+
+  // Confetti burst
+  const confettiEl = document.getElementById('celebConfetti');
+  const emojis = ['🎉', '💖', '✨', '💫', '💕', '🎊', '💗', '💝', '❤️', '🌸'];
+  for (let i = 0; i < 80; i++) {
+    const el = document.createElement('div');
+    el.className = 'celeb-confetti-piece';
+    el.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+    el.style.left = (20 + Math.random() * 60) + '%';
+    el.style.top = (30 + Math.random() * 40) + '%';
+    el.style.setProperty('--tx', (Math.random() - 0.5) * 300 + 'px');
+    el.style.setProperty('--ty', -(100 + Math.random() * 200) + 'px');
+    el.style.fontSize = (16 + Math.random() * 24) + 'px';
+    el.style.animationDelay = Math.random() * 1.5 + 's';
+    el.style.animationDuration = (2.5 + Math.random() * 1.5) + 's';
+    confettiEl.appendChild(el);
+  }
+
+  // Cracker bursts
+  const crackersEl = document.getElementById('celebCrackers');
+  const crackerEmojis = ['🎆', '🎇', '✨', '💥', '⭐', '🌟'];
+  for (let i = 0; i < 15; i++) {
+    const el = document.createElement('div');
+    el.className = 'celeb-cracker';
+    el.textContent = crackerEmojis[Math.floor(Math.random() * crackerEmojis.length)];
+    el.style.left = (10 + Math.random() * 80) + '%';
+    el.style.top = (10 + Math.random() * 80) + '%';
+    el.style.animationDelay = Math.random() * 1.5 + 's';
+    crackersEl.appendChild(el);
+  }
+</script>
+</body>
+</html>

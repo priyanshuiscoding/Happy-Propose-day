@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>For Soumya 💕 Propose Day</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Flying hearts background -->
+<div class="flying-hearts" id="flyingHearts"></div>
+
+<!-- Decorative blobs -->
+<div class="blob blob-1"></div>
+<div class="blob blob-2"></div>
+<div class="blob blob-3"></div>
+
+<!-- Background Music -->
+<audio id="bgMusic" loop preload="auto" playsinline>
+  <source src="music.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<div class="music-control">
+  <button id="musicBtn">🎵 Play Music</button>
+  <span id="musicStatus" aria-live="polite" style="display:inline-block;margin-left:8px;font-size:0.9rem"></span>
+</div>
+
+<div id="tapToPlay" class="tap-to-play" style="display:none;">
+  <button id="tapPlayBtn">Tap to enable sound ▶</button>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-photo">
+    <div class="hero-photo-wrapper">
+      <img src="photos/photo1.jpeg" class="hero-img" alt="Us" loading="eager">
+    </div>
+  </div>
+  <h1>Hey Soumya… <span class="emoji-large">💕</span></h1>
+  <p class="hero-sub">It's <strong>Propose Day</strong> today — and my heart has been wanting to say something for so long. 💝</p>
+  <p class="hero-sub">I couldn't ask you in person… so I made this for you. 💌</p>
+  <button class="cta" onclick="scrollToSection('our-story')">Scroll & Read Our Story 💖</button>
+</section>
+
+<div class="divider">
+  <span>💗</span><span>💕</span><span>💖</span>
+</div>
+
+<!-- Section 1: No matter the fights -->
+<section id="our-story" class="section">
+  <div class="section-card">
+    <h2>💝 No Matter What…</h2>
+    <p>No matter how much we fight, no matter how much we say things to each other… I will <strong>always</strong> love you till the end of my life. 💕</p>
+    <p>Our arguments don't change what I feel for you. They never will. 😊</p>
+  </div>
+</section>
+
+<!-- Cute GIFs -->
+<section class="section">
+  <div class="gif-section">
+    <div class="gif-wrap">
+      <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" alt="Cute cat" loading="lazy">
+    </div>
+    <div class="gif-wrap">
+      <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" alt="Love" loading="lazy">
+    </div>
+    <div class="gif-wrap">
+      <img src="https://media.giphy.com/media/26u4cqiYI30juCOGY/giphy.gif" alt="Kiss" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- Door sections - open inner pages -->
+<section id="doors" class="doors-section">
+  <h2 style="font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--deep-rose);margin-bottom:8px;">Open these for more 💕</h2>
+  <p style="margin-bottom:24px;font-size:1.05rem;">Click to explore!</p>
+  <div class="doors-grid">
+    <a href="mcq.html" class="door-card">
+      <span class="door-icon">📝</span>
+      <h3>Fun Quiz</h3>
+      <p>Who's more loving? Who sleeps more? Let's find out! 😊</p>
+    </a>
+    <a href="letter.html" class="door-card">
+      <span class="door-icon">💌</span>
+      <h3>A Letter for You</h3>
+      <p>A beautiful letter with poetry, just for you 💗</p>
+    </a>
+    <a href="album.html" class="door-card">
+      <span class="door-icon">📖</span>
+      <h3>Our Album</h3>
+      <p>All our beautiful moments in a magazine-style album 📸</p>
+    </a>
+  </div>
+</section>
+
+<!-- Section 2: Our future -->
+<section class="section">
+  <div class="section-card">
+    <h2>✨ Our Future Together</h2>
+    <p>I want a <strong>great future</strong> ahead for us. I wanna see us successful — and I mean it. 🚀</p>
+    <p>I dream of us growing together, achieving our dreams, and building a life full of love and happiness. 💫</p>
+  </div>
+  <div class="photo-box">
+    <img src="photos/photo2.jpeg" alt="Our memory">
+    <img src="photos/photo3.jpeg" alt="Our memory">
+  </div>
+</section>
+
+<div class="divider">
+  <span>💗</span><span>💕</span><span>💖</span>
+</div>
+
+<!-- Section 3: Correct me but never leave -->
+<section class="section">
+  <div class="section-card">
+    <h2>🙏 Just One Thing…</h2>
+    <p>Please <strong>correct me</strong> for my mistakes. Tell me how and why I am wrong — I need that. 💪</p>
+    <p>But <strong>never ever</strong> say that you wanna leave. It really shatters my heart when you say such things to me. 💔</p>
+    <p>You mean everything to me, Soumya. Stay with me through thick and thin. 💕</p>
+  </div>
+</section>
+
+<!-- More cute GIFs -->
+<section class="section">
+  <div class="gif-section">
+    <div class="gif-wrap">
+      <img src="https://media.giphy.com/media/26BRv0ThflsHCqDrG/giphy.gif" alt="Hearts" loading="lazy">
+    </div>
+    <div class="gif-wrap">
+      <img src="https://media.giphy.com/media/1DqjKdR1FtlZu/giphy.gif" alt="Cute love" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- Section 4: You're my better half -->
+<section class="section">
+  <div class="section-card">
+    <h2>👩‍❤️‍👨 You're Already My Better Half</h2>
+    <p>I love you to that extent that I have already considered you as my <strong>life partner</strong> in my heart. You are already my better half — yes, <strong>my wifey</strong>. 💍</p>
+    <p>You've always been the one. In my heart, we're already together forever. 💕</p>
+  </div>
+  <div class="photo-box">
+    <img src="photos/photo4.jpeg" alt="Our memory">
+    <img src="photos/photo5.jpeg" alt="Our memory">
+  </div>
+</section>
+
+<div class="divider">
+  <span>💗</span><span>💕</span><span>💖</span>
+</div>
+
+<!-- Section 5: Here I am asking -->
+<section class="section">
+  <div class="section-card">
+    <h2>💌 Here I Am, Asking You…</h2>
+    <p>I'm unable to ask you in person. But here I am — <strong>asking you</strong> to be my better half for my whole life. 💝</p>
+    <p>To be with me in my <strong>success and failure</strong>. To be with me in my <strong>good and bad</strong>. 🤝</p>
+    <p>I will give you so much beautiful life — with everything you wish for. 🌟</p>
+  </div>
+</section>
+
+<!-- Section 6: Overwhelming love -->
+<section class="section">
+  <div class="section-card">
+    <h2>🥺 I Will Love You So Much…</h2>
+    <p>I will love you so much that you will feel <strong>overwhelmed</strong>. 💗</p>
+    <p>Just please… <strong>stay with me</strong>. 🙏</p>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section class="section gallery-section">
+  <h2>Our Beautiful Moments 📸</h2>
+  <div class="gallery">
+    <div class="gallery-item"><img src="photos/photo6.jpeg" alt="Photo"></div>
+    <div class="gallery-item"><img src="photos/photo7.jpeg" alt="Photo"></div>
+    <div class="gallery-item"><img src="photos/photo8.jpeg" alt="Photo"></div>
+    <div class="gallery-item"><img src="photos/photo9.jpeg" alt="Photo"></div>
+    <div class="gallery-item"><img src="photos/photo10.jpeg" alt="Photo"></div>
+  </div>
+</section>
+
+<div class="divider">
+  <span>💗</span><span>💕</span><span>💖</span>
+</div>
+
+<!-- The Big Ask - Proposal -->
+<section class="proposal">
+  <div class="proposal-bg-hearts">
+    <span>💖</span><span>💕</span><span>💗</span><span>💝</span><span>💕</span>
+  </div>
+  <h1 class="proposal-text">Soumya, on this Propose Day…<br>Will you be my <strong>better half</strong> for life? 💕</h1>
+  <p style="margin-bottom: 24px; font-size: 1.1rem;">Say yes and make my heart the happiest! 💗</p>
+  <div class="proposal-buttons">
+    <button onclick="yesClicked()" class="yes-btn">YES! 💖</button>
+    <button onclick="yesClicked()" class="yes-btn">YES, I'LL BE YOUR BETTER HALF! 😭💕</button>
+  </div>
+</section>
+
+<!-- Celebration -->
+<div id="celebration" class="hidden">
+  <div class="celebration-content">
+    <h1 class="celebration-text">You just made me the happiest person alive! 💕💕💕<br>My better half forever! 💍</h1>
+  </div>
+</div>
+
+<div id="confetti"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
